@@ -1,0 +1,223 @@
+
+*::after {
+    margin: 3px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+html {                     
+    font-family: 'Poppins', sans-serif; /*todo el texto va hacer tipo poppins y si no hay internet va hacer sans-serif*/
+    font-size: 16px; /*pues tamaño de las fuentes*/
+    color: #e4dddd; /*pues en negro las fuentes pa*/
+}
+
+body {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(32, 32, 42);
+}
+
+
+
+a { /*para quitar la decoracion en este caso la linea que siempre sale abajo de los enlases*/
+    text-decoration: none;
+}
+
+
+.container { 
+    width: 50%;
+    max-width: 150.5rem; /*digamos o mas bien es para ir dejando espacion, hacerlo mas a la derecha*/
+    margin: 0 auto;/*posicion del texto del cuerpo*/
+    padding: 0;
+}
+
+
+/*Header tamaño del cuerpo y color */
+header {
+    width: 100%;/* position: absolute; /*pues para que no se mueva el cuerpo*/
+    top: 16px;
+    left: 6px;/* z-index: 1; /*para colocarlo adelante de cualquier elemento*/
+    background-color: rgb(23, 23, 28);
+
+}
+
+
+/*navegacion*/
+
+.nav { /*la etiqueta de navegacion*/
+    height: 9.8rem;
+    display: flex; /*para que se separe todo*/
+    justify-content: center;
+}
+
+
+.nav-list {
+    list-style: none;/*para que la lista no tenga puntitos pai*/
+    padding: 5.5rem;
+    display:flex; /*pocicion de letra del contenido*/
+    flex-direction: column;/* se pone en columna pero separado*/
+    justify-content: space-around;/*con esta deja mucho mas espacio entre ellas*/
+    z-index: 3250;
+    /*transform: translateX(-100%);/*con esto hace magia y lo desaparece*/
+}
+
+
+
+/*navegacion*/
+
+
+
+.nav-link {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-transform: uppercase;/*para poner todas las letras en mayusculas*/
+    font-size: 1.6rem;
+    letter-spacing: 2px;/*el espacio entre letras*/
+    margin-right: -2px;
+    text-align: center;
+}
+
+.nav-link:hover {
+    /* AQUI esta el color de hover para el menu responsive*/
+    color: hsl(36, 83%, 54%);/*lo que vimos en clase para que cuando pases el cursor el boton cambie de color*/
+    border-bottom: 2px solid hsl(36, 83%, 54%);}
+
+
+head{
+
+    background-color:rgb(23, 23, 28);
+    justify-content: center;
+    position: relative;
+}
+
+
+
+
+
+/*native*/
+@media screen and (min-width: 900px) {
+
+    section {
+        padding: 100px; /*medidas del cuerpo*/
+        width: 10%;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-list {
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        padding: 0;
+        justify-content: initial;
+        flex-direction:row;
+        justify-content: center;/*centra el contenido*/
+        transform: initial;
+        transition: initial;
+    }
+
+    .nav-item {
+        margin: 4.6rem;
+    }
+
+    .nav-link {
+        font-size: 1.3rem;
+      
+    }
+
+    .head {
+        font-size: 2.7rem;
+        letter-spacing: 0.9rem;
+        
+    }
+
+
+    /*diseño del contenido*/
+    .series{
+        margin-top:5%;
+        padding: 3%;
+        border: 0px;
+        width: 150px;
+        height: 270px;
+        border-radius: 15px;
+        background-color: rgb(34, 34, 42);
+    }
+
+    .series1{
+        margin-top:5%;
+        padding: 3%;
+        border: 0px;
+        width: 90%;
+        height: 270px;
+        border-radius: 15px;
+        background-color: rgb(34, 34, 42);
+    }
+    img{
+        width: 200px;
+        height: 210px;
+        border-radius: 9px;
+       
+    }
+    p{
+        color: aliceblue;
+    }
+    .novelas {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+   
+    .novelas .series {
+        flex: 1;
+        margin-right: 10px;
+        margin-bottom: 10px; /* Añade un margen inferior para crear un salto de línea */
+    }
+
+    .novelas2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .novelas2 .series {
+        flex: 1;
+        margin-right: 10px;
+        margin-bottom: 10px; /* Añade un margen inferior para crear un salto de línea */
+    }
+
+
+    /*navegador de busqueda*/
+    .botonespie{
+        width: 45px;
+        height: 45px;
+       
+    }
+
+    .botton{
+        background-color: #c12424;
+    }
+ 
+    .button1{
+        color: rgb(211, 189, 44);
+        font-family: 'Times New Roman', Times, serif;
+        background-color:  rgb(39, 41, 81);
+    }
+
+    .botonespie{
+        width: 45px;
+        height: 30px;
+        color:#964040;
+    }
+    
+}
+
+.mi-input {
+    background-color: #21222c; /* Puedes cambiar #ffcc00 al color que prefieras */
+    margin-top: 18px;
+    padding: 10px 400px;
+}
